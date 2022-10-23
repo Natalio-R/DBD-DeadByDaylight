@@ -1,13 +1,55 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* Dark Mode */
+  --background: #0f0e17;
+  --headline: #fffffe;
+  --paragraph: #a7a9be;
+  --button: #ff8906;
+  --buttonText: #fffffe;
+  --stroke: black;
+  --main: #fffffe;
+  --highlight: #ff8906;
+  --secodnary: #f25f4c;
+  --tertiary: #e53170;
+  /* Light Mode */
+  --Lbackground: #eff0f3;
+  --Lheadline: #0d0d0d;
+  --Lparagraph: #2a2a2a;
+  --Lbutton: #ff8e3c;
+  --LbuttonText: #0d0d0d;
+  --Lstroke: #0d0d0d;
+  --Lmain: #eff0f3;
+  --Lhighlight: #ff8e3c;
+  --Lsecodnary: #fffffe;
+  --Ltertiary: #d9376e;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", "Nunito Sans", sans-serif;
+  background-color: var(--background);
+  color: var(--headline);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body.light-mode {
+  background-color: var(--Lbackground);
+  color: var(--Lheadline);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
